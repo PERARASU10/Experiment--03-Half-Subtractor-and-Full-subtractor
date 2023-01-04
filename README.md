@@ -40,22 +40,32 @@ Developed by: PERARASU M
 
 RegisterNumber:  22008454
 
-Half subtractor program
+HALF SUBTRACTOR PROGRAM
 
 module halfsub(A,B,Diff,borr);
+
 input A,B;
+
 output Diff,borr;
+
 assign Diff = (A ^ B);
+
 assign borr = (~ A & B);
+
 endmodule
 
-Full subtractor program
+FULL SUBTRACTOR PROGRAM
 
 module EX3 (A,B,C,Diff,Borrow);
+
 input A,B,C;
+
 output Diff,Borrow;
+
 assign Borrow=(~A&(B ^ C) | (B & C));
+
 assign Diff=(A ^ B ^ C);
+
 endmodule
 
 ## Output:
